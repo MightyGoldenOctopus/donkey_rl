@@ -31,7 +31,7 @@ First, we have to install `donkey_gym` python package, which extends the OpenAI 
 To install the package, navigate to `donkey_rl/src/donkey_gym` folder and type the follow command:
 ```
 $ cd donkey_rl/src/donkey_gym
-$ pip install -e .
+$ sudo python ./setup.py install
 ```
 
 After installing `donkey_gym`, we can go ahead to test the environment by running the DDQN script that I've implemented:
