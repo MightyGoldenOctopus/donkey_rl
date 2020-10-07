@@ -4,7 +4,6 @@ import random
 import numpy as np
 import cv2
 import skimage as skimage
-import skimage as skimage
 from skimage import transform, color, exposure
 from skimage.transform import rotate
 from skimage.viewer import ImageViewer
@@ -17,14 +16,15 @@ from keras.models import model_from_json
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Activation, Flatten
 from keras.layers.convolutional import Convolution2D, MaxPooling2D
-import tensorflow as tf
-from keras import backend as K
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+import tensorflow.python.keras.backend as K
 
 import donkey_gym
 import my_cv
 
 EPISODES = 10000
-img_rows , img_cols = 80, 80
+img_rows, img_cols = 80, 80
 # Convert image into Black and white
 img_channels = 4 # We stack 4 frames
 
